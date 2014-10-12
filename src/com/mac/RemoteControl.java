@@ -12,4 +12,7 @@ public class RemoteControl {
 		this.state = state;
 	}
 	
+	public void doAction() {
+		System.out.println(state.toString());
+	}
 }

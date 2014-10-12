@@ -3,7 +3,7 @@ package com.mac;
 public class OnState implements TVState {
 
 	@Override
-	public void doOperation(RemoteControl rc) {
+	public void saveState(RemoteControl rc) {
 		rc.setState(this);
 		System.out.println("TV is ON");
 	}
@@ -12,5 +12,7 @@ public class OnState implements TVState {
 	public String toString() {
 		return "Turning TV off";
 	}
+
+
 
 }

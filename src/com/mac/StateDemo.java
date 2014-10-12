@@ -6,14 +6,12 @@ public class StateDemo {
 		RemoteControl rc = new RemoteControl();
 		
 		OffState offState=new OffState();
-		offState.doOperation(rc);
-		
-		System.out.println(rc.getState().toString());
+		offState.saveState(rc);
+		rc.doAction();
 		
 		OnState onState=new OnState();
-		onState.doOperation(rc);
-		
-		System.out.println(rc.getState().toString());
+		onState.saveState(rc);
+		rc.doAction();
 		
 	}
 
