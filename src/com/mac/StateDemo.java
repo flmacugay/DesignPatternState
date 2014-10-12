@@ -7,11 +7,13 @@ public class StateDemo {
 		
 		OffState offState=new OffState();
 		offState.doOperation(rc);
-		System.out.println(rc.getState());
+		
+		System.out.println(rc.getState().toString());
 		
 		OnState onState=new OnState();
 		onState.doOperation(rc);
-		System.out.println(rc.getState());
+		
+		System.out.println(rc.getState().toString());
 		
 	}
 
